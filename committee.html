@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ECPSCI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Include Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/dripicons.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      /* Make the carousel take up full screen */
+      #sync1 .item {
+        position: relative;
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .owl-theme .owl-nav {
+        /*default owl-theme theme reset .disabled:hover links */
+      }
+      .owl-theme .owl-nav [class*="owl-"] {
+        transition: all 0.3s ease;
+      }
+      .owl-theme .owl-nav [class*="owl-"].disabled:hover {
+        background-color: #d6d6d6;
+      }
+
+      #sync1.owl-theme {
+        position: relative;
+      }
+      #sync1.owl-theme .owl-next,
+      #sync1.owl-theme .owl-prev {
+        width: 20px;
+        height: auto;
+        margin-top: -20px;
+        position: absolute;
+        top: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #sync1.owl-theme .owl-next:hover,
+      #sync1.owl-theme .owl-prev:hover {
+        color: #fff;
+        padding: 10px;
+        border-radius: 100%;
+      }
+      #sync1.owl-theme .owl-prev {
+        left: 10px;
+      }
+      #sync1.owl-theme .owl-next {
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-area header-three">
+      <div class="header-top second-header">
+        <div class="container">
+          <div class="row align-items-center" style="text-align: center">
+            <h2 data-animation="fadeInUp" data-delay=".4s" class="resp-header">
+              <span
+                >International Conference on Genetic AI Revolution Sustainable
+                Development on Healthcare and Lifesciences - 2024</span
+              >
+            </h2>
+            <p
+              data-animation="fadeInUp"
+              data-delay=".6s"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              12 Dec - 13 Dec, 2024 | Hyderabad, Telangana, India.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="header-sticky" class="menu-area">
+        <div class="container">
+          <div class="second-menu">
+            <div class="row align-items-center">
+              <div class="col-xl-9 col-lg-7">
+                <div class="main-menu">
+                  <nav id="mobile-menu">
+                    <ul
+                      style="
+                        display: flex;
+                        justify-content: start;
+                        align-items: start;
+                        flex-wrap: wrap;
+                      "
+                    >
+                      <li class="nav-li-items">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="index.html">Call for Papers</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="committee.html">Committe</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="speakers.html">Keynote Speakers</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="submission.pdf">Submission Guideline</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="workshops.html">Workshops</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="program.html">Program</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="registration.html">Registration</a>
+                      </li>
+                      <li class="nav-li-items">
+                        <a href="venue.html">Venue</a>
+                      </li>
+
+                      <li class="nav-li-items">
+                        <a href="SI.html">Journal Special Issues</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 text-right text-xl-right">
+                <div class="login mt-25 mb-25">
+                  <ul class="header-btn-placement">
+                    <li>
+                      <div class="second-header-btn" style="margin-left: 0px">
+                        <a href="#" class="btn">Submit Paper</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mobile-menu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+    <!-- offcanvas-area -->
+    <!-- <div class="offcanvas-menu">
+      <span class="menu-close"><i class="fas fa-times"></i></span>
+      <form
+        role="search"
+        method="get"
+        id="searchform"
+        class="searchform"
+        action="http://wordpress.zcube.in/xconsulta/"
+      >
+        <input type="text" name="s" id="search2" placeholder="Search" />
+        <button><i class="fa fa-search"></i></button>
+      </form>
+      <div id="cssmenu3" class="menu-one-page-menu-container">
+        <ul class="menu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#">About Us</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="courses.html">Courses</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="pricing.html">Pricing </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="team.html">Teacher</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="projects.html">Gallery</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="cssmenu2" class="menu-one-page-menu-container">
+        <ul id="menu-one-page-menu-12" class="menu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#home"><span>+8 12 3456897</span></a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#howitwork"><span>info@example.com</span></a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- <div class="offcanvas-overly"></div> -->
+    <!-- offcanvas-end -->
+    <!-- main-area -->
+    <main>
+      <div id="sync1" class="owl-carousel owl-theme">
+        <div
+          class="item"
+          style="background-image: url('img/home/pic1.png')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/home/pic2.png')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/home/pic3.png')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/home/pic4.jpg')"
+        ></div>
+      </div>
+
+      <div class="sponser">
+        <div class="container">
+          <div class="row align-items-center" style="text-align: center">
+            <h2 data-animation="fadeInUp" data-delay=".4s" style="color: white">
+              Our Sponsers
+            </h2>
+          </div>
+          <div class="row brand-active pt-90">
+            <div class="col-xl-2">
+              <div class="single-brand">
+                <img src="img/brand/b-logo1.png" alt="img" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="single-brand">
+                <img src="img/brand/b-logo2.png" alt="img" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="single-brand">
+                <img src="img/brand/b-logo3.png" alt="img" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="single-brand">
+                <img src="img/brand/b-logo4.png" alt="img" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="single-brand">
+                <img src="img/brand/b-logo5.png" alt="img" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="single-brand">
+                <img src="img/brand/b-logo2.png" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="inner-blog b-details-p pb-120" style="margin-top: 50px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="blog-details-wrap">
+                <div class="details__content pb-30">
+                  <h2 style="color: black">Organization Committee</h2>
+                  <h3 class="small-heading">Chief Patron</h3>
+                  <ul class="list-style-one">
+                    <li>
+                      Dr. N Goutham Rao, Chairman, Vignana Bharathi Institute of
+                      Technology, Hyderabad, Telangana, India.
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">Patron</h3>
+                  <ul class="list-style-one">
+                    <li>
+                      Dr. G Manohar Reddy, Secretary, Vignana Bharathi Institute
+                      of Technology, Hyderabad, Telangana, India.
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">General Chairs</h3>
+                  <ul class="list-style-one">
+                    <li>Sachi Nandan Mohanty, VIT-AP University, India</li>
+                    <li>
+                      Fernando Moreira, Universidade Portucalense, Portugal
+                    </li>
+                    <li>
+                      Dr. PVS Srinivas, Vignana Bharathi Institute of
+                      Technology, Hyderabad, Telangana, India.
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">General Co-chairs</h3>
+                  <ul class="list-style-one">
+                    <li>Shu Hu, Purdue University, USA</li>
+                    <li>Ming Yang, Kennesaw University, USA</li>
+                    <li>
+                      Dr. G Sreeram, Vignana Bharathi Institute of Technology,
+                      Hyderabad, Telangana, India.
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">Technical Program Chairs</h3>
+                  <ul class="list-style-one">
+                    <li>Ming Yang, Kennesaw State University, Atlanta, USA</li>
+                    <li>
+                      Bhupesh Kumar Dewangan, OP Jindal University, Raigarh,
+                      India
+                    </li>
+                    <li>Sanjay Misra, Covenant University, Ota, Nigeria</li>
+                    <li>Milos Stojmenovic, Singidunum University, Serbia</li>
+                    <li>
+                      Dr. M venkateswara Rao, Vignana Bharathi Institute of
+                      Technology, Hyderabad, Telangana, India.
+                    </li>
+                    <li>
+                      Dr. K Shirisha Reddy, Vignana Bharathi Institute of
+                      Technology, Hyderabad, Telangana, India.
+                    </li>
+                    <li>
+                      Georgios Tsaramirsis, Higher Colleges of Technology, Abu
+                      Dhabi
+                    </li>
+                    <li>Sven Groppe, University of Lübeck, Germany</li>
+                    <li>
+                      Mohammad Yamin, Abdulaziz University, Jeddah, Saudi Arabia
+                    </li>
+                    <li>Mukesh Misra, Massey University, New Zealand</li>
+                    <li>
+                      Neha Mohanty, Department of Computer Science &
+                      Engineering, New Jersey Institute of Technology, USA
+                    </li>
+                    <li>Jinghua Groppe, University of Lübeck, Germany</li>
+                    <li>Abdulrhman Alshareef, King Abdulaziz University</li>
+                    <li>
+                      Gourav Gupta, Massey University, Palmerston North, New
+                      Zealand
+                    </li>
+                    <li>
+                      Lal Hussain, University of Jazad Ammu and Kashmir,
+                      Pakistan
+                    </li>
+                    <li>Maria Avilés, Gijon Hospital, Asturias, Spain</li>
+                    <li>Izzat Al-Darraji, University of Baghdad, Baghdad</li>
+                    <li>Lie Li, Kennesaw State University, Atlanta, USA</li>
+                    <li>
+                      Abdulsattar Abdullah Hamad, University of Samarra, Iraq
+                    </li>
+                    <li>Vicente Garcia Diaz, University Oviedo, Spain</li>
+                    <li>
+                      Oscar Castillo, Tijuana Institute Technology, Mexico
+                    </li>
+                    <li>J P Das, University of Alberta, Canada</li>
+                    <li>
+                      Rajkumar Singh Rathore, Cardiff Met University, London, UK
+                    </li>
+                    <li>
+                      Osamah Ibrahim Khalaf, Department of Solar, Al-Nahrain
+                      Research Center for Renewable Energy, Al-Nahrain
+                      University, Jadriya, Baghdad, Iraq
+                    </li>
+                    <li>Osamah Ibrahim Khalaf, Department of Solar</li>
+                    <li>
+                      GHAIDA MUTTASHAR ABDULSAHIB, University of Technology,
+                      Baghdad, Iraq
+                    </li>
+                    <li>Sameer Algburi, Al-Kitab University, Iraq</li>
+                    <li>
+                      Habib Hamam, Faculty of Engineering, Uni de Moncton,
+                      Canada
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">Publicity Chairs</h3>
+                  <ul class="list-style-one">
+                    <li>Sudan Jha, Kathmandu University, Nepal</li>
+                    <li>Nonita Sharma, IGDTUW, New Delhi, India</li>
+                    <li>
+                      Dr. Dara Raju, Vignana Bharathi Institute of Technology,
+                      Hyderabad, Telangana, India.
+                    </li>
+                    <li>
+                      Dr. N Srinivas, Vignana Bharathi Institute of Technology,
+                      Hyderabad, Telangana, India.
+                    </li>
+                    <li>
+                      Shweta Sankhwar, Maitreyi College, University of Delhi,
+                      India
+                    </li>
+                    <li>
+                      Bhrugumalla LVS Aditya, VIT-AP University, AP, India
+                    </li>
+                    <li>
+                      Shreyas Rajendra Hole, Dayananda Sagar University,
+                      Karnataka, India
+                    </li>
+                    <li>Princy Randhawa, Manipal University, Jaipur, India</li>
+                  </ul>
+
+                  <h3 class="small-heading">Publication Chair</h3>
+                  <ul class="list-style-one">
+                    <li>
+                      Nithesh Naik, Manipal Institute of Technology, Manipal,
+                      India
+                    </li>
+                    <li>
+                      Suneeta Satpathy, SOA Deemed to be University, Odisha,
+                      India
+                    </li>
+                    <li>
+                      Dr. Monika Mangla, Department of IT, Dwarkadas J Sanghvi
+                      College of Engineering, Mumbai
+                    </li>
+                    <li>Dr. Deepa Jose, KCG College of Technology, Chennai</li>
+                    <li>
+                      Dr. Nidhi Agarwal, Dept of SCSE, Galgotias University,
+                      Greater Noida
+                    </li>
+                    <li>
+                      Dr. Priya Gupta, ABVSME, Jawaharlal Nehru University, New
+                      Delhi
+                    </li>
+                    <li>
+                      Dr. A. PramodKumar, CMR Engineering College, Hyderabad
+                    </li>
+                    <li>
+                      Dr. Jayavrinda Vrindavanam, Dayananda Sagar University
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">Workshops Chair</h3>
+                  <ul class="list-style-one">
+                    <li>
+                      Shreyas Rajendra Hole, Dayananda Sagar University,
+                      Karnataka, India
+                    </li>
+                    <!-- <li>Princy Randhawa, Manipal University, Jaipur, India</li> -->
+                    <li>
+                      Dr. N Arjun, Vignana Bharathi Institute of Technology,
+                      Hyderabad, Telangana, India.
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">Local Organizers</h3>
+                  <ul class="list-style-one">
+                    <li>Dr AL Sreenivasulu, VBIT, HYD.</li>
+                    <li>Dr N Swapna, VBIT, HYD.</li>
+                    <li>Dr P Subhadra, VBIT, HYD.</li>
+                    <li>Dr T Praveen, VBIT, HYD.</li>
+                    <li>Dr RAJESH SATURI, VBIT, HYD.</li>
+                    <li>Dr K Laxmaiah, VBIT, HYD.</li>
+                    <li>Mr Praveen P, VBIT, HYD.</li>
+                    <li>Mr G Anil Kumar, VBIT, HYD.</li>
+                    <li>Ms M Kalpana, VBIT, HYD.</li>
+                    <li>Mr G Arun, VBIT, HYD.</li>
+                    <li>Mr G Srikanth Reddy, VBIT, HYD.</li>
+                    <li>Ms N Yamini Devi, VBIT, HYD.</li>
+                    <li>Mr P Hanumanth Rao, VBIT, HYD.</li>
+                    <li>Ms Swetha Kodali, VBIT, HYD.</li>
+                    <li>Ms J Kumari, VBIT, HYD.</li>
+                  </ul>
+
+                  <h3 class="small-heading">Steering Committee</h3>
+                  <ul class="list-style-one">
+                    <li>
+                      Manas Kumar Pradhan, Skyline University College, UAE
+                    </li>
+                    <li>Subhendu Kumar Rath, BPUT, ODISHA, India</li>
+                    <li>
+                      Varsha Subudhi B, Specialist, Ministry of Education, UAE
+                    </li>
+                    <li>Dhanada K Mishra, USA</li>
+                    <li>Ming Yang, Kennesaw State University, Atlanta, USA</li>
+                    <li>
+                      Bhupesh Kumar Dewangan, OP Jindal University, Raigarh,
+                      India
+                    </li>
+                    <li>Sanjay Misra, Covenant University, Ota, Nigeria</li>
+                    <li>Milos Stojmenovic, Singidunum University, Serbia</li>
+                    <li>
+                      Georgios Tsaramirsis, Higher Colleges of Technology, Abu
+                      Dhabi
+                    </li>
+                    <li>Sven Groppe, University of Lübeck, Germany</li>
+                    <li>
+                      Mohammad Yamin, Abdulaziz University, Jeddah, Saudi Arabia
+                    </li>
+                    <li>Mukesh Misra, Massey University, New Zealand</li>
+                    <li>
+                      Neha Mohanty, Department of Computer Science &
+                      Engineering, New Jersey Institute of Technology, USA
+                    </li>
+                    <li>Jinghua Groppe, University of Lübeck, Germany</li>
+                    <li>Abdulrhman Alshareef, King Abdulaziz University</li>
+                    <li>
+                      Gourav Gupta, Massey University, Palmerston North, New
+                      Zealand
+                    </li>
+                    <li>
+                      Lal Hussain, University of Jazad Ammu and Kashmir,
+                      Pakistan
+                    </li>
+                    <li>Maria Avilés, Gijon Hospital, Asturias, Spain</li>
+                    <li>Izzat Al-Darraji, University of Baghdad, Baghdad</li>
+                    <li>Lie Li, Kennesaw State University, Atlanta, USA</li>
+                    <li>
+                      Abdulsattar Abdullah Hamad, University of Samarra, Iraq
+                    </li>
+                    <li>Vicente Garcia Diaz, University Oviedo, Spain</li>
+                    <li>
+                      Oscar Castillo, Tijuana Institute Technology, Mexico
+                    </li>
+                    <li>J P Das, University of Alberta, Canada</li>
+                    <li>
+                      Rajkumar Singh Rathore, Cardiff Met University, London, UK
+                    </li>
+                    <li>
+                      Osamah Ibrahim Khalaf, Department of Solar, Al-Nahrain
+                      Research Center for Renewable Energy, Al-Nahrain
+                      University, Jadriya, Baghdad, Iraq
+                    </li>
+                    <li>Osamah Ibrahim Khalaf, Department of Solar</li>
+                    <li>
+                      GHAIDA MUTTASHAR ABDULSAHIB, University of Technology,
+                      Baghdad, Iraq
+                    </li>
+                    <li>Sameer Algburi, Al-Kitab University, Iraq</li>
+                    <li>
+                      Habib Hamam, Faculty of Engineering, Uni de Moncton,
+                      Canada
+                    </li>
+                  </ul>
+
+                  <h3 class="small-heading">Technical Program Committee</h3>
+                  <ul class="list-style-one">
+                    <li>Samer Khamaiseh, Miami University, OH</li>
+                    <li>Ahmed Aleroud, Augusta University, USA</li>
+                    <li>Albert Carlson, Austin Community College</li>
+                    <li>
+                      Alberto Coen-Porisini, Università degli Studi
+                      dell'Insubria
+                    </li>
+                    <li>
+                      Aneta Poniszewska-Maranda, Institute of Information
+                      Technology, Lodz University of Technology
+                    </li>
+                    <li>Battou Amal, uiz</li>
+                    <li>Chinmaya Kumar Dehury, University of Tartu</li>
+                    <li>Fahad Manzoor Siddiqui, Queens University, Belfast</li>
+                    <li>
+                      Francesco Santini, Dipartimento di Matematica e
+                      Informatica, Università di Perugia, Italy
+                    </li>
+                    <li>Gianluca Cena, CNR-IEIIT</li>
+                    <li>Guezzaz Azidine, Cadi Ayyad University</li>
+                    <li>Hassina Meziane, Université Oran 1 Ahmed Ben Bella</li>
+                    <li>Izzat Alsmadi, Texas A&M, San Antonio</li>
+                    <li>Jorge Sa Silva, University of Coimbra</li>
+                    <li>Josef Horalek, University of Hradec Králové</li>
+                    <li>Jung-Chun Liu, Tunghai University</li>
+                    <li>Katty Rohoden, UTPL</li>
+                    <li>Manuel Munier, UPPA</li>
+                    <li>
+                      Marcelo Guimarães, UESB - State University of Southwest
+                      Bahia
+                    </li>
+                    <li>Miran Taha, University of Sulaimani</li>
+                    <li>
+                      Mohammad Alsmirat, Jordan University of Science and
+                      Technology
+                    </li>
+                    <li>Mujeeb Ur Rehman, York St John University</li>
+                    <li>Nadia Bennani, Lab. LIRIS INSA de Lyon</li>
+                    <li>Noshina Tariq, Air University, Islamabad</li>
+                    <li>
+                      Peerumporn Jiranantanagorn, Rajamangala University of
+                      Technology Rattanakosin
+                    </li>
+                    <li>Pierre Leone, University of Geneva</li>
+                    <li>Ramon Dos Reis Fontes, IFBA/Unicamp</li>
+                    <li>Samer Khamaiseh, Miami Univ.</li>
+                    <li>Stelvio Cimato, Università degli Studi di Milano</li>
+                    <li>
+                      Syed Danial Ali Shah, University of New South Wales,
+                      Australia
+                    </li>
+                    <li>
+                      Takeshi Takahashi, National Institute of Information and
+                      Communications Technology
+                    </li>
+                    <li>Verena Kantere, University of Ottawa</li>
+                    <li>Yaser Jararweh, Duquesne University</li>
+                    <li>Zongming Fei, University of Kentucky</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- #right side -->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <aside class="sidebar-widget">
+                <section
+                  id="recent-posts-4"
+                  class="widget widget_recent_entries"
+                >
+                  <h2 class="widget-title">Important Dates</h2>
+                  <ul>
+                    <li>
+                      <a href="#">Deadline for Paper Submission:</a>
+                      <span class="post-date">Oct 10, 2024</span>
+                    </li>
+                    <li>
+                      <a href="#">Full Paper acceptance notification:</a>
+                      <span class="post-date">Oct 30, 2024</span>
+                    </li>
+                    <li>
+                      <a href="#">Camera Ready Submission:</a>
+                      <span class="post-date">Nov 12, 2024</span>
+                    </li>
+                    <li>
+                      <a href="#">Registration Last Date:</a>
+                      <span class="post-date">Nov 20, 2024</span>
+                    </li>
+                    <li>
+                      <a href="#">Conference Date:</a>
+                      <span class="post-date">Dec 12 - 13, 2024</span>
+                    </li>
+                  </ul>
+                </section>
+              </aside>
+            </div>
+            <!-- #right side end -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer -->
+    <footer class="footer-bg footer-p pt-90">
+      <div class="footer-top pb-30">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <h2>
+                    International Conference on Genetic AI Revolution
+                    Sustainable Development on Healthcare and LifeSciences -
+                    2024
+                  </h2>
+                </div>
+                <div class="f-contact">
+                  <ul>
+                    <li>
+                      <i class="icon fa-solid fa-paper-plane"></i>
+                      <span>Ghatkesar, Hyderabad, Telangana</span>
+                    </li>
+                    <li>
+                      <i class="icon fa-solid fa-phone"></i>
+                      <span><a href="tel:08415200419">08415200419</a></span>
+                    </li>
+                    <li>
+                      <i class="icon fa-solid fa-envelope"></i>
+                      <span>
+                        <a href="mailto:conf2024@vbithyd.ac.in"
+                          >conf2024@vbithyd.ac.in</a
+                        >
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-2 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <h2>Our Links</h2>
+                </div>
+                <div class="footer-link">
+                  <ul
+                    style="
+                      display: grid;
+                      grid-template-columns: repeat(2, minmax(0, 1fr));
+                    "
+                  >
+                    <span>
+                      <li>
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="calls.html">Call for Papers</a>
+                      </li>
+                      <li>
+                        <a href="committee.html">Committe</a>
+                      </li>
+                      <li>
+                        <a href="speakers.html">Keynote Speakers</a>
+                      </li>
+
+                      <li>
+                        <a href="submission.pdf">Submission Guideline</a>
+                      </li>
+                      <li>
+                        <a href="workshops.html">Workshops</a>
+                      </li>
+                    </span>
+                    <span>
+                      <li>
+                        <a href="program.html">Program</a>
+                      </li>
+                      <li>
+                        <a href="registration.html">Registration</a>
+                      </li>
+                      <li>
+                        <a href="venue.html">Venue</a>
+                      </li>
+
+                      <li>
+                        <a href="SI.html">Journal Special Issues</a>
+                      </li>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-xl-2 col-lg-2 col-sm-6">
+                <div class="footer-widget mb-30">
+                  <div class="f-widget-title">
+                    <h2>Services</h2>
+                  </div>
+                  <div class="footer-link">
+                    <ul>
+                      <li><a href="index.html">Edu Smart</a></li>
+                      <li><a href="#"> Learn Well</a></li>
+                      <li><a href="courses.html">Knowledge Hub</a></li>
+                      <li><a href="contact.html"> Skill Master</a></li>
+                      <li><a href="blog.html">Knowledge Plus </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="second-header-btn" style="margin-left: 0px">
+                <a href="contact.html" class="btn footer-btn">Submit Paper</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrap">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              Copyright © IC - AIRSDHL 2024 . All rights reserved.
+            </div>
+            <div class="col-lg-6 text-right text-xl-right">
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/js_isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+
+    <!-- Include jQuery -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <!-- Include Owl Carousel JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        var sync1 = $("#sync1");
+        var syncedSecondary = true;
+
+        sync1
+          .owlCarousel({
+            items: 1,
+            slideSpeed: 2000,
+            nav: true,
+            autoplay: true,
+            dots: false,
+            loop: true,
+            responsiveRefreshRate: 200,
+            navText: [
+              '<svg width="70%" height="70%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+              '<svg width="70%" height="70%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>',
+            ],
+          })
+          .on("changed.owl.carousel", syncPosition);
+
+        function syncPosition(el) {
+          //if you set loop to false, you have to restore this next line
+          //var current = el.item.index;
+
+          //if you disable loop you have to comment this block
+          var count = el.item.count - 1;
+          var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+
+          if (current < 0) {
+            current = count;
+          }
+          if (current > count) {
+            current = 0;
+          }
+        }
+
+        function syncPosition2(el) {
+          if (syncedSecondary) {
+            var number = el.item.index;
+            sync1.data("owl.carousel").to(number, 100, true);
+          }
+        }
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
